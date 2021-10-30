@@ -1,0 +1,312 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+header {
+  width: 100%;
+  background-color: #4ebc70;
+
+  color: #eee;
+  padding: 20px;
+  border-bottom: 5px solid rgba(0, 0, 0, 0.438);
+
+  position: sticky;
+  top: 0;
+  display: flex;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logocardtenis {
+  width: 45px;
+  height: 45px;
+  background-color: #203142;
+  border-radius: 0.4rem;
+  display: flex;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li a {
+  text-decoration: none;
+  background: transparent;
+  border: 1px solid transparent;
+  outline: none;
+ 
+}
+
+li a:hover, li a:focus {
+  border: 1px solid #eee;
+  background: #45a764;
+ 
+}
+ul li:first-child a {
+  background-color: #203142;
+  border-radius: 0.4rem;
+  transition: 0.4s;
+  
+  
+}
+ul li:first-child a:hover, ul li:first-child a:focus {
+  background: transparent;
+}
+
+.container {
+  background-color: #eee;
+  min-height: 60vh;
+  padding: 50px;
+}
+
+.product-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.card {
+  width: 31%;
+  display: inline-block;
+  margin: 1% 1%;
+  padding: 15px;
+}
+
+.products-img {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 10px;
+  background-position: center;
+  background-size: cover;
+}
+
+h2 {
+  border-left: 5px solid #4ebc70;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  color: #45a764;
+}
+
+.card p {
+  margin-bottom: 10px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 1.3em;
+  color:#203142;
+}
+li {
+    margin-right: 30px;
+}
+a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  background-color: #4ebc70;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  color: #eee;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  padding: 10px;
+}
+
+a:hover, a:focus {
+  opacity: 0.8;
+}
+
+#img-1 {
+  background-image: url("./assets/tenis1.jpg");
+  border-radius: 0.4rem;
+}
+
+#img-2 {
+  background-image: url("./assets/tenis2.jpg");
+  border-radius: 0.4rem;
+}
+
+#img-3 {
+  background-image: url("./assets/tenis3.jpg");
+  border-radius: 0.4rem;
+}
+
+#img-4 {
+  background-image: url("./assets/tenis4.jpg");
+  border-radius: 0.4rem;
+}
+
+#img-5 {
+  background-image: url("./assets/tenis5.jpg");
+  border-radius: 0.4rem;
+}
+
+#img-6 {
+  background-image: url("./assets/tenis6.jpg");
+  border-radius: 0.4rem;
+}
+
+footer {
+  width: 100%;
+
+  padding: 10px;
+  background-color: #203142;
+ 
+  color: #eee;
+  font-size: 2rem;
+  text-align: center;
+}
+
+footer p,
+footer span {
+  font-size: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+
+
+.green{
+    color:#45a764;
+    
+}
+
+/* media query */
+/* mobile */
+
+@media screen and (max-width: 414px) {
+  header {
+    width: 100vw;
+    display: flex;
+    height: 200px;
+    flex-wrap: wrap;
+
+    position: static;
+    padding: 0;
+  }
+
+  nav {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .logocardtenis {
+    margin: 10px;
+  }
+  ul {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+  }
+  ul li:first-child a {
+    border-radius: 0;
+    text-align: center;
+  }
+  li {
+    margin-right: 0;
+}
+
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+
+  .product-container {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 300px;
+    padding: 1rem;
+  }
+
+  footer p {
+      font-size:1rem;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 570px) {
+  ul li a {
+    font-size: 0.6rem;
+  }
+
+  .container {
+    padding: 0;
+
+    display: flex;
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 200px;
+  }
+
+  footer p {
+      font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 571px) and (max-width: 864px) {
+  .container {
+    padding: 0;
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 200px;
+  }
+
+  footer p {
+      font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 864px) and (max-width: 980px) {
+  .container {
+    padding: 0;
+  }
+
+  .product-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card {
+    flex: 1 1 400px;
+  }
+
+  footer p {
+      font-size: 1rem;
+  }
+}
+
+
